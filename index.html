@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Aseo Escolar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Registro de Aseo Escolar</h1>
+
+  <div class="formulario">
+    <label for="lugar">Lugar de aseo:</label>
+    <select id="lugar">
+      <option value="Baños">Baños</option>
+      <option value="Salones">Salones</option>
+      <option value="Gradas">Gradas</option>
+      <option value="Cafetería">Cafetería</option>
+    </select>
+
+    <label>Tomar Foto del Aseo:</label>
+    <video id="video" autoplay playsinline></video>
+    <button type="button" id="tomarFoto">Tomar Foto</button>
+
+    <div class="preview">
+      <p>Vista previa:</p>
+      <canvas id="canvas" style="display:none"></canvas>
+      <img id="previewImg" src="" alt="Vista previa" />
+    </div>
+
+    <button id="guardar">Guardar Aseo</button>
+  </div>
+
+  <div class="registros" id="registros">
+    <h2>Historial de Registros</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
